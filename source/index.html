@@ -1,13 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MooN - интернет-магазин велосипедов</title>
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav
+          class="page-header__main-nav main-nav main-nav--closed main-nav--nojs"
+        >
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button
+            class="main-nav__toggle"
+            type="button"
+            aria-label="Открыть меню"
+            title="Открыть меню"
+          >
+            <span class="main-nav__toggle-line"></span>
+          </button>
+        </nav>
+      </div>
+      <!-- /.page-header__wrapper -->
+    </header>
+    <!-- /.page-header -->
+    <main class="page-main">
+      <h1 class="visually-hidden">MooN - Интернет-магазин велосипедов</h1>
+      <section class="page-main__main-block main-block">
+        <section class="main-block__promo promo">
+          <a class="promo__logo">
+            <img
+              src="img/logo.svg"
+              alt="Логотип интернет-магазина велосипедов MooN"
+              width="68"
+              height="20"
+            />
+          </a>
+          <h2>Мы продаем велосипеды</h2>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+        <!-- /.main-block__promo promo -->
+        <section class="main-block__form form">
+          <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="user-name"
+              >Введите Ваше Имя</label
+            >
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Введите Ваше Имя"
+              required
+            />
+            <label class="visually-hidden" for="user-tel"
+              >Введите Ваш номер телефона</label
+            >
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Введите Ваш номер телефона"
+              required
+            />
+            <button class="form__button button" type="submit">
+              <span class="button__text">Подобрать велосипед мечты</span>
+            </button>
+          </form>
+        </section>
+        <!-- /.main-block__form form -->
+      </section>
+      <!-- /.page-main__main-block -->
+    </main>
+    <!-- /.page-main -->
+    <footer class="page-footer"></footer>
+    <!-- /.page-footer -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
