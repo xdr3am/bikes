@@ -1,0 +1,145 @@
+.types-goods {
+  background-color: #f6f7f9;
+}
+
+.types-goods__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 152px;
+  padding-bottom: 96px;
+}
+
+.types-goods__wrapper h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.types-goods__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.types-goods__item {
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+
+  &--mt10 {
+    margin-top: 10px;
+  }
+
+  &--mt39 {
+    margin-top: 39px;
+  }
+}
+
+.type-goods__link {
+  transition: box-shadow 0.1s;
+}
+
+.types-goods__image-container {
+  position: relative;
+  margin-bottom: 21px;
+
+  &--circle {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 156px;
+      left: -60px;
+      width: 180px;
+      height: 180px;
+      background-color: transparent;
+      border: 27px solid $decoration-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+  }
+
+  &--squares {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      width: 47px;
+      height: 47px;
+      background-color: transparent;
+      border: 8px solid $decoration-color;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      top: -18px;
+      left: -19px;
+    }
+
+    &::before {
+      bottom: -23px;
+      right: -23px;
+    }
+  }
+
+  &--mini-circle {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      top: -32px;
+      right: -36px;
+      width: 95px;
+      height: 95px;
+      background-color: transparent;
+      border: 17px solid $decoration-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.types-goods__link img {
+  position: relative;
+  z-index: 2;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.types-goods__link h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: $base-text-color;
+  padding: 0;
+  margin: 0;
+}
+
+.types-goods__link:hover img,
+.types-goods__link:focus img {
+  box-shadow: 0 0 0 5px $decoration-color;
+  transition: box-shadow 0.1s;
+}
+
+.types-goods__link:hover h3,
+.types-goods__link:focus h3 {
+  opacity: 0.7;
+}
+
+.types-goods__link:active img,
+.types-goods__link:active h3 {
+  opacity: 0.5;
+}

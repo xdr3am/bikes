@@ -40,30 +40,171 @@
     <main class="page-main">
       <h1 class="visually-hidden">MooN - Интернет-магазин велосипедов</h1>
       <section class="page-main__main-block main-block">
-        <section class="main-block__promo promo">
-          <a class="promo__logo">
-            <img src="img/logo.svg" alt="Логотип интернет-магазина велосипедов MooN" width="68" height="20">
-          </a>
-          <h2>Мы продаем велосипеды</h2>
-          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        </section>
-        <!-- /.main-block__promo promo -->
-        <section class="main-block__form form">
-          <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
-          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
-            <input type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" required="">
-            <label class="visually-hidden" for="user-tel">Введите Ваш номер телефона</label>
-            <input type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" required="">
-            <button class="form__button button" type="submit">
-              <span class="button__text">Подобрать велосипед мечты</span>
-            </button>
-          </form>
-        </section>
-        <!-- /.main-block__form form -->
+        <div class="main-block__wrapper">
+          <section class="main-block__promo promo">
+            <a class="promo__logo">
+              <img src="img/logo.svg" alt="Логотип интернет-магазина велосипедов MooN" width="68" height="20">
+            </a>
+            <h2>Мы продаем велосипеды</h2>
+            <p>
+              Наш магазин отбирает только самые лучшие велосипеды для продажи
+            </p>
+          </section>
+          <!-- /.main-block__promo promo -->
+          <section class="main-block__form form">
+            <h2 class="visually-hidden">Форма для подбора велосипеда</h2>
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
+              <input type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" required="">
+              <label class="visually-hidden" for="user-tel">Введите Ваш номер телефона</label>
+              <input type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" required="">
+              <button class="form__button button" type="submit">
+                <span class="button__text">Подобрать велосипед мечты</span>
+              </button>
+            </form>
+          </section>
+          <!-- /.main-block__form form -->
+        </div>
       </section>
       <!-- /.page-main__main-block -->
+      <section class="page-main__about about">
+        <div class="about__wrapper">
+          <h2>Несколько фактов о нас</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <span class="about__number">01</span>
+              <p>Самый широкий выбор велосипедов!</p>
+            </li>
+            <li class="about__item">
+              <span class="about__number">02</span>
+              <p>Доставка велосипедов по всей России!</p>
+            </li>
+            <li class="about__item">
+              <span class="about__number">03</span>
+              <p>Большой выбор крутых аксессуаров!</p>
+            </li>
+            <li class="about__item">
+              <span class="about__number">04</span>
+              <p>Профессиональные консультации!</p>
+            </li>
+          </ul>
+        </div>
+        <!-- /.about__wrapper -->
+      </section>
+      <!-- /.page-main__about about -->
+      <section class="page-main__types-goods types-goods">
+        <div class="types-goods__wrapper">
+          <h2>Виды велосипедов</h2>
+          <ul class="types-goods__list">
+            <li class="types-goods__item types-goods__item--mt10">
+              <a class="types-goods__link" href="#">
+                <div class="types-goods__image-container types-goods__image-container--circle">
+                  <!-- <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike001-tablet@1x.jpg 1x,
+                      img/card-bike001-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike001-tablet@1x.webp 1x,
+                      img/card-bike001-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/card-bike001-desktop@1x.webp 1x,
+                      img/card-bike001-desktop@2x.webp 2x
+                    "
+                  /> -->
+                  <img src="img/card-bike001-desktop@1x.jpg" srcset="img/card-bike001-desktop@2x.jpg 2x" alt="Дорожный велосипед">
+                </div>
+                <h3>Дорожный велосипед</h3>
+              </a>
+            </li>
+            <li class="types-goods__item types-goods__item--mt39">
+              <a class="types-goods__link" href="#">
+                <div class="types-goods__image-container types-goods__image-container--squares">
+                  <!-- <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike002-tablet@1x.jpg 1x,
+                      img/card-bike002-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike002-tablet@1x.webp 1x,
+                      img/card-bike002-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/card-bike002-desktop@1x.webp 1x,
+                      img/card-bike002-desktop@2x.webp 2x
+                    "
+                  /> -->
+                  <img src="img/card-bike002-desktop@1x.jpg" srcset="img/card-bike002-desktop@2x.jpg 2x" alt="Дорожный велосипед">
+                </div>
+                <h3>Горный велосипед</h3>
+              </a>
+            </li>
+            <li class="types-goods__item">
+              <a class="types-goods__link" href="#">
+                <div class="types-goods__image-container types-goods__image-container--mini-circle">
+                  <!-- <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike003-tablet@1x.jpg 1x,
+                      img/card-bike003-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    srcset="
+                      img/card-bike003-tablet@1x.webp 1x,
+                      img/card-bike003-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/card-bike003-desktop@1x.webp 1x,
+                      img/card-bike003-desktop@2x.webp 2x
+                    "
+                  /> -->
+                  <img src="img/card-bike003-desktop@1x.jpg" srcset="img/card-bike003-desktop@2x.jpg 2x" alt="Дорожный велосипед">
+                </div>
+                <h3>Детский велосипед</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.types-goods__wrapper -->
+      </section>
+      <!-- /.page-main__types-goods types-goods -->
+      <section class="page-main__video-block video-block">
+        <div class="video-block__wrapper">
+          <h2>Видео про велосипеды</h2>
+          <p>
+            В этом видео мы подробно расскажем про особенности выбора велосипеда
+            для себя.
+          </p>
+          <div class="video-block__video-container">
+            <button class="video-block__play-button" type="button" aria-label="Смотреть видео"></button>
+          </div>
+        </div>
+      </section>
+      <!-- /.page-main__video-block video-block -->
     </main>
     <!-- /.page-main -->
     <footer class="page-footer"></footer>

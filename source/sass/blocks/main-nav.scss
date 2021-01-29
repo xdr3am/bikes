@@ -1,4 +1,11 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
 .main-nav__list {
+  max-width: 874px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,8 +14,9 @@
   padding-left: 18px;
   padding-right: 23px;
   padding-bottom: 9px;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -175,6 +183,10 @@
 @media (max-width: $tablet-width) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs {
+    position: relative;
   }
 
   .main-nav--nojs .main-nav__list {
