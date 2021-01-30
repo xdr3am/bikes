@@ -48,9 +48,15 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+  margin-right: 10px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 12px;
   }
 }
 
@@ -73,7 +79,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-width: 288px;
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 53px;
