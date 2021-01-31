@@ -163,15 +163,18 @@
   overflow: hidden;
   box-sizing: border-box;
 
-  &--h503 {
+  &--h503,
+  &--h503 img {
     height: 503px;
   }
 
-  &--h566 {
+  &--h566,
+  &--h566 img {
     height: 566px;
   }
 
-  &--h513 {
+  &--h513,
+  &--h513 img {
     height: 513px;
   }
 
@@ -188,7 +191,9 @@
   transition: transform 0.3s;
 
   @media (max-width: $tablet-width) {
-    top: -30px;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
   }
 }
 
