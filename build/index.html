@@ -40,8 +40,8 @@
   </header>
   <!--.page-header -->
   <main class="page-main">
-    <h1 class="visually-hidden">MooN - Интернет-магазин велосипедов</h1>
     <section class="page-main__main-block main-block">
+      <h1 class="visually-hidden">MooN - Интернет-магазин велосипедов</h1>
       <div class="main-block__wrapper">
         <section class="main-block__promo promo">
           <a class="promo__logo">
@@ -58,9 +58,9 @@
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
-            <input type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]" required="">
+            <input type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" required="">
             <label class="visually-hidden" for="user-tel">Введите Ваш номер телефона</label>
-            <input type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" required="">
+            <input type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" pattern="[0-9+()-]{4,}" minlength="4" maxlength="18" required="">
             <button class="form__button button" type="submit">
               <span class="button__text">Подобрать велосипед мечты</span>
             </button>
@@ -107,7 +107,8 @@
                         img/card-bikes001@1x.webp 1x,
                         img/card-bikes001@2x.webp 2x
                       ">
-                  <img src="img/card-bikes001@1x.jpg" srcset="img/card-bikes001@2x.jpg 2x" alt="Дорожный велосипед">
+                  <!-- 1х: 1512px; 2x: 3024px -->
+                  <img src="img/card-bikes001@1x.jpg" srcset="img/card-bikes001@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
                 </picture>
               </div>
               <h3>Дорожный велосипед</h3>
@@ -121,7 +122,8 @@
                         img/card-bikes002@1x.webp 1x,
                         img/card-bikes002@2x.webp 2x
                       ">
-                  <img src="img/card-bikes002@1x.jpg" srcset="img/card-bikes002@2x.jpg 2x" alt="Горный велосипед">
+                  <!-- 1х: 1365px; 2x: 2731px -->
+                  <img src="img/card-bikes002@1x.jpg" srcset="img/card-bikes002@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
                 </picture>
               </div>
               <h3>Горный велосипед</h3>
@@ -135,7 +137,8 @@
                         img/card-bikes003@1x.webp 1x,
                         img/card-bikes003@2x.webp 2x
                       ">
-                  <img src="img/card-bikes003@1x.jpg" srcset="img/card-bikes003@2x.jpg 2x" alt="Детский велосипед">
+                  <!-- 1х: 2048px; 2x: 4096px -->
+                  <img src="img/card-bikes003@1x.jpg" srcset="img/card-bikes003@2x.jpg 2x" alt="Детский велосипед" width="342" height="513">
                 </picture>
               </div>
               <h3>Детский велосипед</h3>
@@ -170,7 +173,8 @@
       <div class="page-footer__map-container">
         <picture>
           <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-          <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+          <!-- 1х: 698px; 2x: 1396px -->
+          <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
         </picture>
       </div>
       <ul class="page-footer__contact-list">
