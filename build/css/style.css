@@ -26,6 +26,18 @@
   font-display: swap;
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"); }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  padding: 0;
+  margin: 0; }
+
 a {
   text-decoration: none; }
 
@@ -45,18 +57,6 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
-
-.page {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  color: #000000;
-  padding: 0;
-  margin: 0; }
 
 .page-header {
   position: relative; }
