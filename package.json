@@ -6,8 +6,8 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
+    "eslint": "7.1.0",
+    "eslint-config-htmlacademy": "0.6.0",
     "gulp": "4.0.x",
     "gulp-csso": "3.0.1",
     "gulp-imagemin": "5.0.3",
@@ -24,14 +24,14 @@
     "posthtml-include": "1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "webpack": "5.20.1",
-    "webpack-cli": "4.5.0"
+    "webpack": "5.3.0",
+    "webpack-cli": "4.1.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
-    "build-webpack": "webpack --mode production",
+    "build-webpack": "webpack --mode development",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
