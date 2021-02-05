@@ -1,12 +1,4 @@
-/******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
-!function() {
-/*!**********************************!*\
-  !*** ./source/js/mobile-menu.js ***!
-  \**********************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements:  */
-
+'use strict';
 
 (function () {
   const navMain = document.querySelector(`.main-nav`);
@@ -34,14 +26,7 @@
   }
 })();
 
-}();
-!function() {
-/*!*************************************!*\
-  !*** ./source/js/smooth-anchors.js ***!
-  \*************************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements:  */
-
+'use strict';
 
 (function () {
   const anchors = document.querySelectorAll(`a[href*="#"]`);
@@ -59,7 +44,3 @@
     });
   }
 })();
-
-}();
-/******/ })()
-;
