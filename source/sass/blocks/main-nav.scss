@@ -25,21 +25,30 @@
   }
 }
 
+.main-nav--show {
+  overflow: hidden;
+}
+
 .main-nav--opened .main-nav__list {
   @media (max-width: $tablet-width) {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     padding-top: 100px;
     border: none;
   }
+}
+
+.main-nav.main-nav--opened {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
 .main-nav__item {
